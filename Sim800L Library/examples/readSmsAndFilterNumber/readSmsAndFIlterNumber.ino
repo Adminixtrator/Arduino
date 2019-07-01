@@ -1,32 +1,22 @@
-/* This library was refurbished by ADMINIXTRATOR @Aang Studios.
- *      minixtrator@@gmail.com
- *  Designed to work with the GSM Sim800l,maybe work with SIM900L
- *  
- *     This library use SoftwareSerial, you can define the RX and TX pin in the header "Sim800l.h" ,by default the pin is RX=10 TX=11..
- *     Be sure that gnd is attached to arduino too. 
- *     You can also change the other preferred RESET_PIN
- *    
- *     Esta libreria usa SoftwareSerial, se pueden cambiar los pines de RX y TX
- *     en el archivo header, "Sim800l.h", por defecto los pines vienen configurado en
- *     RX=10 TX=11.  
- *     Tambien se puede cambiar el RESET_PIN por otro que prefiera
- *     
- *    PINOUT: 
- *        _____________________________
- *       |  ARDUINO UNO >>>   SIM800L  |
- *        -----------------------------
- *            GND      >>>   GND
- *        RX  10       >>>   TX    
- *        TX  11       >>>   RX
- *       RESET 2       >>>   RST 
- *                 
- *   POWER SOURCE 3.4V to 4.7V >>> VCC
- *
- *    Refurbished on: June 28, 2019
- *    Refurbish Author: ADMINIXTRATOR
- *        
- *
+/* minixtrator@gmail.com
+
+
+    This code is designed to work with the GSM Sim800l Library in this repository
+
+      PINOUT:
+          _____________________________
+         |ARDUINO UNO  >>>   SIM800L  |
+          -----------------------------
+              GND      >>>   GND
+          RX or 10     >>>   TX
+          TX or 11     >>>   RX
+         RESET or 2    >>>   RST
+
+     POWER SOURCE 3.4V - 4.5V >>> VCC
+
+
 */
+
 
 #include <Sim800l.h>
 #include <SoftwareSerial.h> //is necesary for the library!! 
@@ -85,7 +75,9 @@ void loop(){
              //delete all sms..so when receive a new sms always will be in first position
             } 
 
-
+/*Aang Studios
+ * ADMINIXTRATOR
+ */
 
         }
     }
