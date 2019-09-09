@@ -15,5 +15,19 @@ void loop() {
     myServo.write(i);
     delay(1000);
   }
-  
+  //acrobatic();
+}
+
+void acrobatic(){
+  myServo.write(90);
+  delay(1000);
+  myServo.write(50);
+  delay(1000);
+  myServo.write(180);
+  delay(1000);
+  myServo.write(40);
+  delay(1000);
+  myServo.write(100);
+  delay(1000);
+  myServo.write(110);
 }
