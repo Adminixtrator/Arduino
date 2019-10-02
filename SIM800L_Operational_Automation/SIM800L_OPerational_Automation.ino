@@ -46,9 +46,9 @@ void SendMessage(){
 
   serialSIM800.println("AT+CMGF=1");
   delay(1000);
-  serialSIM800.println("AT+CMGS=\"+2347056643929\"\r");
+  serialSIM800.println("AT+CMGS=\"+2349059329620\"\r");
   delay(1000);
-  serialSIM800.println("I am SMS from GSM Module");
+  serialSIM800.println("This is just a Test!");
   delay(100);
   serialSIM800.println((char)26);
   delay(1000);
@@ -62,7 +62,7 @@ void RecieveMessage(){
 }
 
 void DialCall(){
-  serialSIM800.println("ATD+2347056643929;");
+  serialSIM800.println("ATD+2349059329620;");
   delay(100);
 }
 
