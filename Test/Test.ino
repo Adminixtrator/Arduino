@@ -14,7 +14,7 @@ void setup() {
   Serial.begin(9600);
   serialSIM800.begin(9600);
   delay(1000);
-  Serial.write("Setup Complete! Welcome MINIXTRATOR");
+  Serial.write("Setup Complete! Welcome ADMINIXTRATOR");
   delay(100);
 
   
@@ -32,7 +32,7 @@ void loop() {
     Serial.write(serialSIM800.read());
   }
 
-        serialSIM800.println("AT+CGATT=1"); //Connect SIM to GPROS
+  serialSIM800.println("AT+CGATT=1"); //Connect SIM to GPROS
   delay(10);
   serialSIM800.println("AT+SAPBR=3,1,\"CONTYPE\",\"GPRS\""); //Activate bearer profile with connection type GPRS
   delay(10);
