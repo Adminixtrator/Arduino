@@ -55,7 +55,7 @@ void SendMessage(){
   serialSIM800.println("Message sent..");
 }
 
-void RecieveMessage(){
+void RecieveMessage(){ 
   
   serialSIM800.println("AT+CNMI=2,2,0,0,0");
   delay(1000);
